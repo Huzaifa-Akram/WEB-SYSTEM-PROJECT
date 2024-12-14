@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Huzaifa-Akram.github.io/WEB-SYSTEM-PROJECT",
+  "homepage": "https://github.com/Huzaifa-Akram/WEB-SYSTEM-PROJECT",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
