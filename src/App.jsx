@@ -5,20 +5,20 @@ import CreateNote from "./components/CreateNote";
 import Note from "./components/Note";
 import Footer from "./components/Footer";
 
-const customNoteContainerStyle = {
-  background: "rgba(255, 255, 255, 0.1)",
-  borderRadius: "15px",
-  boxShadow:
-    "0 0 15px rgba(255, 255, 255, 0.1),0 0 20px rgba(173, 216, 230, 0.3), 0 0 20px rgba(173, 216, 230, 0.5)",
-  backdropFilter: "blur(10px)",
-  margin: "50px auto",
-};
-
 function App() {
   const [notes, setNotes] = useState([]);
   const [currentNote, setCurrentNote] = useState({ title: "", content: "" });
   const [buttonText, setButtonText] = useState("Add");
   const [editIndex, setEditIndex] = useState(null);
+
+  const customNoteContainerStyle = {
+    background: "rgba(255, 255, 255, 0.1)",
+    borderRadius: "15px",
+    boxShadow:
+      "0 0 15px rgba(255, 255, 255, 0.1),0 0 20px rgba(173, 216, 230, 0.3), 0 0 20px rgba(173, 216, 230, 0.5)",
+    backdropFilter: "blur(10px)",
+    margin: "50px auto",
+  };
 
   function updateNotes(newNote) {
     if (editIndex !== null) {
