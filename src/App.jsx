@@ -12,10 +12,10 @@ function App() {
   const [editIndex, setEditIndex] = useState(null);
 
   const customNoteContainerStyle = {
-    background: rgba(255, 255, 255, 0.1),
+    background: "rgba(255, 255, 255, 0.1)", // corrected line
     borderRadius: "15px",
     boxShadow:
-      "0 0 15px rgba(255, 255, 255, 0.1),0 0 20px rgba(173, 216, 230, 0.3), 0 0 20px rgba(173, 216, 230, 0.5)",
+      "0 0 15px rgba(255, 255, 255, 0.1), 0 0 20px rgba(154, 167, 171, 0.3), 0 0 20px rgba(173, 216, 230, 0.5)", // corrected line
     backdropFilter: "blur(10px)",
     margin: "50px auto",
   };
